@@ -13,6 +13,10 @@ public class EventosControllers {
 		return "formEvento";
 	}
 	
+	public String adicionar() {
+		return "evento-adicionado";
+	}
+	
 	@RequestMapping("/eventos/submit")
 	public String submit(Evento evento) {
 		System.out.println("O método foi executado");
