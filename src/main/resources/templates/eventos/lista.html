@@ -36,7 +36,9 @@
 					<td th:text="${e.local}">Casa das mamães</td>
 					<td th:text="${e.data}">25/09/2025</td>
 					<td th:text="${e.horario}">16:30</td>
-					<td><a th:href="@{/eventos/{id}/remover(id=${e.id})}"><i class="material-icons">delete</i></a></td>
+					<td>
+					<a th:href="@{/eventos/{id}/selecionar(id=${e.id})}"><i class="material-icons">edit</i></a>
+					<a th:href="@{/eventos/{id}/remover(id=${e.id})}"><i class="material-icons">delete</i></a></td>
 				</tr>
 			</tbody>
 		</table>
